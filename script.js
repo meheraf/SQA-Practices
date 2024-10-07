@@ -20,10 +20,10 @@ async function testRun(){
     await driver.findElement(By.xpath("//span[contains(text(),'ADD TO CART')]")).click();
     await driver.sleep(2000);
     await driver.findElement(By.xpath("//a[contains(text(),'VIEW CART')]")).click();
-
+    await driver.sleep(2000);
     
     
-    await driver.sleep(5000);
+    //await driver.sleep(5000);
     await driver.quit();
 }
 testRun();
